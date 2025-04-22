@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F795C0A52DA82AD20076BE4D /* CropperSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0A42DA82AD20076BE4D /* CropperSwiftUIApp.swift */; };
+		F795C0A72DA82AD20076BE4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0A62DA82AD20076BE4D /* ContentView.swift */; };
+		F795C0A92DA82AD50076BE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F795C0A82DA82AD50076BE4D /* Assets.xcassets */; };
+		F795C0AC2DA82AD50076BE4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F795C0AB2DA82AD50076BE4D /* Preview Assets.xcassets */; };
+		F795C0B62DA82AD60076BE4D /* CropperSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0B52DA82AD60076BE4D /* CropperSwiftUITests.swift */; };
+		F795C0C02DA82AD60076BE4D /* CropperSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0BF2DA82AD60076BE4D /* CropperSwiftUIUITests.swift */; };
+		F795C0C22DA82AD60076BE4D /* CropperSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0C12DA82AD60076BE4D /* CropperSwiftUIUITestsLaunchTests.swift */; };
+		F795C0CF2DA831460076BE4D /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0CE2DA831460076BE4D /* CropOverlay.swift */; };
+		F795C0D12DA831A00076BE4D /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0D02DA831A00076BE4D /* CropImageView.swift */; };
+		F795C0D32DA831E50076BE4D /* CropperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0D22DA831E50076BE4D /* CropperViewModel.swift */; };
+		F795C0D52DA847760076BE4D /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0D42DA847760076BE4D /* ImageUtils.swift */; };
+		F795C0D72DA84BA30076BE4D /* LShapeCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0D62DA84BA30076BE4D /* LShapeCorner.swift */; };
+		F795C0D92DA8528A0076BE4D /* CropRectShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C0D82DA8528A0076BE4D /* CropRectShape.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F795C0B22DA82AD60076BE4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F795C0992DA82AD20076BE4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F795C0A02DA82AD20076BE4D;
+			remoteInfo = CropperSwiftUI;
+		};
+		F795C0BC2DA82AD60076BE4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F795C0992DA82AD20076BE4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F795C0A02DA82AD20076BE4D;
+			remoteInfo = CropperSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F795C0A12DA82AD20076BE4D /* CropperSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CropperSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F795C0A42DA82AD20076BE4D /* CropperSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperSwiftUIApp.swift; sourceTree = "<group>"; };
+		F795C0A62DA82AD20076BE4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F795C0A82DA82AD50076BE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F795C0AB2DA82AD50076BE4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F795C0B12DA82AD60076BE4D /* CropperSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropperSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F795C0B52DA82AD60076BE4D /* CropperSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperSwiftUITests.swift; sourceTree = "<group>"; };
+		F795C0BB2DA82AD60076BE4D /* CropperSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CropperSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F795C0BF2DA82AD60076BE4D /* CropperSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperSwiftUIUITests.swift; sourceTree = "<group>"; };
+		F795C0C12DA82AD60076BE4D /* CropperSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F795C0CE2DA831460076BE4D /* CropOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
+		F795C0D02DA831A00076BE4D /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
+		F795C0D22DA831E50076BE4D /* CropperViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropperViewModel.swift; sourceTree = "<group>"; };
+		F795C0D42DA847760076BE4D /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		F795C0D62DA84BA30076BE4D /* LShapeCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LShapeCorner.swift; sourceTree = "<group>"; };
+		F795C0D82DA8528A0076BE4D /* CropRectShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropRectShape.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F795C09E2DA82AD20076BE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F795C0AE2DA82AD60076BE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F795C0B82DA82AD60076BE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F795C0982DA82AD20076BE4D = {
+			isa = PBXGroup;
+			children = (
+				F795C0A32DA82AD20076BE4D /* CropperSwiftUI */,
+				F795C0B42DA82AD60076BE4D /* CropperSwiftUITests */,
+				F795C0BE2DA82AD60076BE4D /* CropperSwiftUIUITests */,
+				F795C0A22DA82AD20076BE4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F795C0A22DA82AD20076BE4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F795C0A12DA82AD20076BE4D /* CropperSwiftUI.app */,
+				F795C0B12DA82AD60076BE4D /* CropperSwiftUITests.xctest */,
+				F795C0BB2DA82AD60076BE4D /* CropperSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F795C0A32DA82AD20076BE4D /* CropperSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F795C0A42DA82AD20076BE4D /* CropperSwiftUIApp.swift */,
+				F795C0A62DA82AD20076BE4D /* ContentView.swift */,
+				F795C0CE2DA831460076BE4D /* CropOverlay.swift */,
+				F795C0D82DA8528A0076BE4D /* CropRectShape.swift */,
+				F795C0D02DA831A00076BE4D /* CropImageView.swift */,
+				F795C0D42DA847760076BE4D /* ImageUtils.swift */,
+				F795C0D22DA831E50076BE4D /* CropperViewModel.swift */,
+				F795C0D62DA84BA30076BE4D /* LShapeCorner.swift */,
+				F795C0A82DA82AD50076BE4D /* Assets.xcassets */,
+				F795C0AA2DA82AD50076BE4D /* Preview Content */,
+			);
+			path = CropperSwiftUI;
+			sourceTree = "<group>";
+		};
+		F795C0AA2DA82AD50076BE4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F795C0AB2DA82AD50076BE4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F795C0B42DA82AD60076BE4D /* CropperSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F795C0B52DA82AD60076BE4D /* CropperSwiftUITests.swift */,
+			);
+			path = CropperSwiftUITests;
+			sourceTree = "<group>";
+		};
+		F795C0BE2DA82AD60076BE4D /* CropperSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F795C0BF2DA82AD60076BE4D /* CropperSwiftUIUITests.swift */,
+				F795C0C12DA82AD60076BE4D /* CropperSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = CropperSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F795C0A02DA82AD20076BE4D /* CropperSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F795C0C52DA82AD60076BE4D /* Build configuration list for PBXNativeTarget "CropperSwiftUI" */;
+			buildPhases = (
+				F795C09D2DA82AD20076BE4D /* Sources */,
+				F795C09E2DA82AD20076BE4D /* Frameworks */,
+				F795C09F2DA82AD20076BE4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CropperSwiftUI;
+			productName = CropperSwiftUI;
+			productReference = F795C0A12DA82AD20076BE4D /* CropperSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F795C0B02DA82AD60076BE4D /* CropperSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F795C0C82DA82AD60076BE4D /* Build configuration list for PBXNativeTarget "CropperSwiftUITests" */;
+			buildPhases = (
+				F795C0AD2DA82AD60076BE4D /* Sources */,
+				F795C0AE2DA82AD60076BE4D /* Frameworks */,
+				F795C0AF2DA82AD60076BE4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F795C0B32DA82AD60076BE4D /* PBXTargetDependency */,
+			);
+			name = CropperSwiftUITests;
+			productName = CropperSwiftUITests;
+			productReference = F795C0B12DA82AD60076BE4D /* CropperSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F795C0BA2DA82AD60076BE4D /* CropperSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F795C0CB2DA82AD60076BE4D /* Build configuration list for PBXNativeTarget "CropperSwiftUIUITests" */;
+			buildPhases = (
+				F795C0B72DA82AD60076BE4D /* Sources */,
+				F795C0B82DA82AD60076BE4D /* Frameworks */,
+				F795C0B92DA82AD60076BE4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F795C0BD2DA82AD60076BE4D /* PBXTargetDependency */,
+			);
+			name = CropperSwiftUIUITests;
+			productName = CropperSwiftUIUITests;
+			productReference = F795C0BB2DA82AD60076BE4D /* CropperSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F795C0992DA82AD20076BE4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F795C0A02DA82AD20076BE4D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F795C0B02DA82AD60076BE4D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F795C0A02DA82AD20076BE4D;
+					};
+					F795C0BA2DA82AD60076BE4D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F795C0A02DA82AD20076BE4D;
+					};
+				};
+			};
+			buildConfigurationList = F795C09C2DA82AD20076BE4D /* Build configuration list for PBXProject "CropperSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F795C0982DA82AD20076BE4D;
+			productRefGroup = F795C0A22DA82AD20076BE4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F795C0A02DA82AD20076BE4D /* CropperSwiftUI */,
+				F795C0B02DA82AD60076BE4D /* CropperSwiftUITests */,
+				F795C0BA2DA82AD60076BE4D /* CropperSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F795C09F2DA82AD20076BE4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F795C0AC2DA82AD50076BE4D /* Preview Assets.xcassets in Resources */,
+				F795C0A92DA82AD50076BE4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F795C0AF2DA82AD60076BE4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F795C0B92DA82AD60076BE4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F795C09D2DA82AD20076BE4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F795C0D12DA831A00076BE4D /* CropImageView.swift in Sources */,
+				F795C0D92DA8528A0076BE4D /* CropRectShape.swift in Sources */,
+				F795C0A72DA82AD20076BE4D /* ContentView.swift in Sources */,
+				F795C0A52DA82AD20076BE4D /* CropperSwiftUIApp.swift in Sources */,
+				F795C0D72DA84BA30076BE4D /* LShapeCorner.swift in Sources */,
+				F795C0CF2DA831460076BE4D /* CropOverlay.swift in Sources */,
+				F795C0D32DA831E50076BE4D /* CropperViewModel.swift in Sources */,
+				F795C0D52DA847760076BE4D /* ImageUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F795C0AD2DA82AD60076BE4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F795C0B62DA82AD60076BE4D /* CropperSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F795C0B72DA82AD60076BE4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F795C0C22DA82AD60076BE4D /* CropperSwiftUIUITestsLaunchTests.swift in Sources */,
+				F795C0C02DA82AD60076BE4D /* CropperSwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F795C0B32DA82AD60076BE4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F795C0A02DA82AD20076BE4D /* CropperSwiftUI */;
+			targetProxy = F795C0B22DA82AD60076BE4D /* PBXContainerItemProxy */;
+		};
+		F795C0BD2DA82AD60076BE4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F795C0A02DA82AD20076BE4D /* CropperSwiftUI */;
+			targetProxy = F795C0BC2DA82AD60076BE4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F795C0C32DA82AD60076BE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F795C0C42DA82AD60076BE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F795C0C62DA82AD60076BE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CropperSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to save your cropped image.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mi.CropperSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F795C0C72DA82AD60076BE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CropperSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need access to save your cropped image.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mi.CropperSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F795C0C92DA82AD60076BE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mi.CropperSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CropperSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CropperSwiftUI";
+			};
+			name = Debug;
+		};
+		F795C0CA2DA82AD60076BE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mi.CropperSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CropperSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CropperSwiftUI";
+			};
+			name = Release;
+		};
+		F795C0CC2DA82AD60076BE4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mi.CropperSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CropperSwiftUI;
+			};
+			name = Debug;
+		};
+		F795C0CD2DA82AD60076BE4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mi.CropperSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CropperSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F795C09C2DA82AD20076BE4D /* Build configuration list for PBXProject "CropperSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F795C0C32DA82AD60076BE4D /* Debug */,
+				F795C0C42DA82AD60076BE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F795C0C52DA82AD60076BE4D /* Build configuration list for PBXNativeTarget "CropperSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F795C0C62DA82AD60076BE4D /* Debug */,
+				F795C0C72DA82AD60076BE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F795C0C82DA82AD60076BE4D /* Build configuration list for PBXNativeTarget "CropperSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F795C0C92DA82AD60076BE4D /* Debug */,
+				F795C0CA2DA82AD60076BE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F795C0CB2DA82AD60076BE4D /* Build configuration list for PBXNativeTarget "CropperSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F795C0CC2DA82AD60076BE4D /* Debug */,
+				F795C0CD2DA82AD60076BE4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F795C0992DA82AD20076BE4D /* Project object */;
+}
